@@ -46,7 +46,7 @@ class CudoComputeProvider(AbstractProvider):
                 gpu_count=gpu,
                 gpu_name=gpu_name(vm.gpu_model),
                 gpu_memory=get_memory(gpu_name(vm.gpu_model)),
-                disk_size=1
+                disk_size=None
             )
             raw_list.append(raw)
         return raw_list

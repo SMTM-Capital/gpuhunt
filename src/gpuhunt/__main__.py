@@ -67,7 +67,7 @@ def main():
 
         provider = VastAIProvider()
     elif args.provider == "cudocompute":
-        from src.gpuhunt.providers.cudocompute import CudoComputeProvider
+        from gpuhunt.providers.cudocompute import CudoComputeProvider
 
         provider = CudoComputeProvider()
     else:
